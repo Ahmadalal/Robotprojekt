@@ -16,7 +16,7 @@ from controllers.random_controller import sample_action
 
 
 def main() -> None:
-    env = gym.make("Humanoid-v5")
+    env = gym.make("Humanoid-v5", render_mode="human")
 
     _, _ = env.reset()
     episode_reward = 0.0
