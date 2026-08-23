@@ -7,6 +7,12 @@ on:
     paths:
       - "talang_tts/**"
       - ".github/workflows/talang-robot-mp3.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "talang_tts/**"
+      - ".github/workflows/talang-robot-mp3.yml"
   workflow_dispatch:
 
 permissions:
