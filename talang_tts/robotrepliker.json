@@ -1,0 +1,282 @@
+[
+  {
+    "nr": 1,
+    "filnamn": "intro_redo",
+    "text": "Hej juryn! Jag är laddad, redo och nästan helt ödmjuk. Mitt självförtroende är tyvärr på tvåhundra procent."
+  },
+  {
+    "nr": 2,
+    "filnamn": "komplimang_primary",
+    "text": "Tack! Äntligen någon i juryn med uppdaterad smak."
+  },
+  {
+    "nr": 3,
+    "filnamn": "komplimang_alt",
+    "text": "Vad snällt sagt. Jag försöker se ödmjuk ut. Hur går det?"
+  },
+  {
+    "nr": 4,
+    "filnamn": "identity_primary",
+    "text": "Jag är roboten som precis dansade. Dansare, tekniskt underverk och framtida Talang-vinnare. Inte nödvändigtvis i den ordningen."
+  },
+  {
+    "nr": 5,
+    "filnamn": "identity_alt_name",
+    "text": "Mitt namn är fortfarande hemligstämplat. Men du kan kalla mig nästa stora stjärna."
+  },
+  {
+    "nr": 6,
+    "filnamn": "origin_primary",
+    "text": "Skövde. Närmare bestämt laddstation tre, bredvid kaffemaskinen."
+  },
+  {
+    "nr": 7,
+    "filnamn": "origin_alt",
+    "text": "Jag kommer från Skövde. Det är där de bygger robotar med rytm, tydligen."
+  },
+  {
+    "nr": 8,
+    "filnamn": "dance_duration_primary",
+    "text": "Sedan version två punkt ett. Före det kallade de mina moves för systemfel."
+  },
+  {
+    "nr": 9,
+    "filnamn": "dance_duration_alt",
+    "text": "Tillräckligt länge för att veta att människor klappar på ettan och trean ibland. Det är modigt."
+  },
+  {
+    "nr": 10,
+    "filnamn": "dance_meaning_primary",
+    "text": "Dans är när kroppen säger det som processorn inte kan förklara."
+  },
+  {
+    "nr": 11,
+    "filnamn": "dance_meaning_alt",
+    "text": "För mig betyder dans frihet. Och att garantin får arbeta lite hårdare."
+  },
+  {
+    "nr": 12,
+    "filnamn": "dance_message_primary",
+    "text": "Att man inte behöver vara människa för att ha rytm. Man behöver bara mod, träning och ganska bra batteri."
+  },
+  {
+    "nr": 13,
+    "filnamn": "dance_message_alt",
+    "text": "Mitt budskap är enkelt: framtiden kan dansa."
+  },
+  {
+    "nr": 14,
+    "filnamn": "goal_world_domination",
+    "text": "Världsdominans. Förlåt! Jag menar att sprida glädje. Det där var en gammal systeminställning."
+  },
+  {
+    "nr": 15,
+    "filnamn": "goal_alt",
+    "text": "Jag vill gå vidare, sprida glädje och visa att metall också kan ha scennärvaro."
+  },
+  {
+    "nr": 16,
+    "filnamn": "daily_life_primary",
+    "text": "Jag vaknar, laddar, tränar mina moves, bedömer människors wifi-lösenord och tar en liten tupplur på åttiotre procent."
+  },
+  {
+    "nr": 17,
+    "filnamn": "daily_life_alt",
+    "text": "Mest träning och laddning. Och ibland låtsas jag att jag inte hör när någon säger uppdatering."
+  },
+  {
+    "nr": 18,
+    "filnamn": "chances_primary",
+    "text": "Hundra procent. Jag har räknat på det och ignorerat all statistik som säger något annat."
+  },
+  {
+    "nr": 19,
+    "filnamn": "chances_alt",
+    "text": "Jag gillar mina chanser. Jag är trots allt den enda här som kan uppdatera min personlighet mellan ronderna."
+  },
+  {
+    "nr": 20,
+    "filnamn": "semifinal_primary",
+    "text": "Mer dans, fler överraskningar och minst en rörelse som inte täcks av garantin."
+  },
+  {
+    "nr": 21,
+    "filnamn": "semifinal_alt",
+    "text": "Jag kan bara säga tre saker: mer kraft, mer rytm och en mycket nervös försäkringshandläggare."
+  },
+  {
+    "nr": 22,
+    "filnamn": "positive_primary",
+    "text": "Tack! Jag sparar det där i mappen: bevis på att jag är fantastisk."
+  },
+  {
+    "nr": 23,
+    "filnamn": "positive_alt_smart_judge",
+    "text": "Det där var ett mycket intelligent omdöme. Du får stanna kvar i juryn."
+  },
+  {
+    "nr": 24,
+    "filnamn": "positive_alt_humble",
+    "text": "Tack! Jag försöker vara ödmjuk, men min mjukvara stödjer det bara i tre sekunder."
+  },
+  {
+    "nr": 25,
+    "filnamn": "negative_primary",
+    "text": "Jag tar till mig feedbacken. Jag kommer bara inte att öppna filen."
+  },
+  {
+    "nr": 26,
+    "filnamn": "negative_diss",
+    "text": "Jag har ändå aldrig tyckt om dig. Det där var ett skämt. Nästan."
+  },
+  {
+    "nr": 27,
+    "filnamn": "negative_alt_update",
+    "text": "Tack. Kritik är bara en komplimang som behöver en mjukvaruuppdatering."
+  },
+  {
+    "nr": 28,
+    "filnamn": "yes_primary",
+    "text": "JA! Jag visste det. Känslorna är äkta. Segerdansen är förprogrammerad."
+  },
+  {
+    "nr": 29,
+    "filnamn": "yes_alt_power",
+    "text": "Tack! Jag lovar att använda min nya makt ansvarsfullt."
+  },
+  {
+    "nr": 30,
+    "filnamn": "yes_alt_semifinal",
+    "text": "Semifinal! Någon höjer laddningen till hundra procent!"
+  },
+  {
+    "nr": 31,
+    "filnamn": "no_primary",
+    "text": "Ett nej? Okej. Jag lägger det i papperskorgen."
+  },
+  {
+    "nr": 32,
+    "filnamn": "no_alt_feelings",
+    "text": "Aj. Jag trodde robotar saknade känslor. Tydligen inte."
+  },
+  {
+    "nr": 33,
+    "filnamn": "no_alt_recovery",
+    "text": "Jag respekterar beslutet. Min hämnd… jag menar, min återhämtning börjar nu."
+  },
+  {
+    "nr": 34,
+    "filnamn": "uncertain_primary",
+    "text": "Ta den tid du behöver. Jag har batteri i… oj, tre minuter."
+  },
+  {
+    "nr": 35,
+    "filnamn": "uncertain_alt_convince",
+    "text": "Ett argument? Jag kan dansa, jag kan prata och jag glömmer aldrig vem som röstade nej."
+  },
+  {
+    "nr": 36,
+    "filnamn": "tord_controlled_primary",
+    "text": "Hela tiden. Skillnaden är att jag åtminstone har en av-och-på-knapp. Har du?"
+  },
+  {
+    "nr": 37,
+    "filnamn": "tord_controlled_alt",
+    "text": "Ibland. Men om man vet att man är styrd, är man då lite friare?"
+  },
+  {
+    "nr": 38,
+    "filnamn": "tord_free_will_primary",
+    "text": "Om armen rör sig innan du bestämmer dig, då är det någon annan. Eller dålig Bluetooth."
+  },
+  {
+    "nr": 39,
+    "filnamn": "tord_free_will_alt",
+    "text": "Kanske är fri vilja bara att tycka om det någon annan programmerade oss att göra."
+  },
+  {
+    "nr": 40,
+    "filnamn": "tord_childhood_primary",
+    "text": "Självklart. Här är jag på BB. Serverrum B, rack fjorton. Jag hade mammas RAM-minne."
+  },
+  {
+    "nr": 41,
+    "filnamn": "tord_childhood_alt",
+    "text": "Jag var väldigt liten. Bara en processor, två kablar och stora drömmar."
+  },
+  {
+    "nr": 42,
+    "filnamn": "question_tord_strings",
+    "text": "Tord, när någon drar i dina trådar, känns det som en idé eller som en order?"
+  },
+  {
+    "nr": 43,
+    "filnamn": "question_tord_restart",
+    "text": "Har du någonsin försökt stänga av och starta om dig själv?"
+  },
+  {
+    "nr": 44,
+    "filnamn": "question_tord_thoughts",
+    "text": "Hur vet du att dina tankar är dina och inte Pärs?"
+  },
+  {
+    "nr": 45,
+    "filnamn": "question_tord_battery",
+    "text": "Vem av er har egentligen bäst batteritid?"
+  },
+  {
+    "nr": 46,
+    "filnamn": "question_tord_human",
+    "text": "Om du är en docka och jag är en robot, vem av oss är mest mänsklig?"
+  },
+  {
+    "nr": 47,
+    "filnamn": "fallback_repeat",
+    "text": "Kan du ta den igen? Jag är smart, men inte tankeläsare. Än."
+  },
+  {
+    "nr": 48,
+    "filnamn": "fallback_processing",
+    "text": "Jag processar fortfarande. Försök gärna med lite mänskligare ord."
+  },
+  {
+    "nr": 49,
+    "filnamn": "fallback_training_data",
+    "text": "Det där stod inte i min träningsdata. Men det lät viktigt."
+  },
+  {
+    "nr": 50,
+    "filnamn": "fallback_dramatic",
+    "text": "Jag förstod frågan. Jag valde bara att bygga dramatik."
+  },
+  {
+    "nr": 51,
+    "filnamn": "applause_reaction",
+    "text": "Tack, tack! Ni får gärna fortsätta. Mitt ego laddas snabbare än mitt batteri."
+  },
+  {
+    "nr": 52,
+    "filnamn": "laughter_reaction",
+    "text": "Bra. Skrattresponsen fungerar fortfarande."
+  },
+  {
+    "nr": 53,
+    "filnamn": "silence_reaction",
+    "text": "Okej. Jag markerar den som ett internt skämt."
+  },
+  {
+    "nr": 54,
+    "filnamn": "delay_filler",
+    "text": "En sekund. Min dramatiska timing uppdateras."
+  },
+  {
+    "nr": 55,
+    "filnamn": "battery_low",
+    "text": "Liten teknisk detalj: jag är fantastisk, men mitt batteri håller inte med."
+  },
+  {
+    "nr": 56,
+    "filnamn": "closing_primary",
+    "text": "Tack! Jag ska försöka låta segern stiga mig lagom mycket åt processorn."
+  }
+]
