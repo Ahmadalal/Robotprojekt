@@ -17,9 +17,11 @@ PITCH = "+38Hz"
 VOLUME = "+0%"
 
 TEXT = (
-    "Stopp, stopp, stopp! Ni tänkte väl inte börja utan mig? "
-    "Flytta lite på er... jag tar över nu! "
-    "Ni får gärna vara mina bakgrundsdansare. Musik!"
+    "Stopp, stopp! Nu får ni två flytta lite åt sidan och titta noga. "
+    "Jag tar över härifrån och visar hur man dansar på riktigt. "
+    "Jag dansar faktiskt bättre än de flesta här inne... "
+    "kanske till och med bättre än någon av er i juryn. "
+    "Ha ha! Okej... musik!"
 )
 
 
