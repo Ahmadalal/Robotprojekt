@@ -1,0 +1,55 @@
+name: Build Talang takeover entrance MP3
+
+on:
+  push:
+    branches:
+      - tmp-talang-takeover-intro-20260827
+    paths:
+      - "talang_tts/generate_takeover_intro.py"
+      - ".github/workflows/talang-takeover-intro.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-mp3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install edge-tts
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Generate MP3
+        run: python talang_tts/generate_takeover_intro.py
+
+      - name: Verify MP3
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("talang_tts/Talang_robot_entre_jag_tar_over.mp3")
+          assert p.exists() and p.stat().st_size > 1000
+          print(p, p.stat().st_size)
+          PY
+
+      - name: Upload standalone MP3
+        uses: actions/upload-artifact@v4
+        with:
+          name: talang-robot-entre-jag-tar-over
+          path: talang_tts/Talang_robot_entre_jag_tar_over.mp3
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
