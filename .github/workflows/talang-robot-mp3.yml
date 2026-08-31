@@ -1,4 +1,4 @@
-name: Build Talang robot MP3 files
+name: Build Talang solo robot MP3 files
 
 on:
   push:
@@ -52,16 +52,16 @@ jobs:
           assert path.exists() and path.stat().st_size > 1000
           with zipfile.ZipFile(path) as z:
               names = z.namelist()
-              assert len(names) == 56, len(names)
+              assert len(names) == 52, len(names)
               assert all(name.lower().endswith(".mp3") for name in names), names
               assert all("/" not in name for name in names), names
-          print("Verified 56 MP3-only files")
+          print("Verified 52 MP3-only solo files")
           PY
 
       - name: Upload MP3-only ZIP
         uses: actions/upload-artifact@v4
         with:
-          name: talang-robot-mp3
+          name: talang-solo-robot-mp3
           path: talang_tts/Talang_Robot_MP3.zip
           if-no-files-found: error
           retention-days: 7
