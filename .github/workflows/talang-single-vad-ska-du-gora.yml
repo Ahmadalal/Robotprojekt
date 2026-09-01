@@ -1,0 +1,60 @@
+name: Build separate Talang answer MP3
+
+on:
+  push:
+    branches:
+      - tmp-talang-single-vad-ska-du-gora-20260901
+    paths:
+      - ".github/workflows/talang-single-vad-ska-du-gora.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-mp3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install audio dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install edge-tts
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Generate matching Talang voice
+        run: |
+          mkdir -p talang_single
+          edge-tts \
+            --voice sv-SE-MattiasNeural \
+            --rate=+7% \
+            --pitch=+38Hz \
+            --text "Jag ska dansa, charma publiken och visa juryn hur riktig talang ser ut. Inga konstigheter." \
+            --write-media talang_single/raw.mp3
+
+          ffmpeg -hide_banner -loglevel error -y \
+            -i talang_single/raw.mp3 \
+            -af "adelay=120:all=1,apad=pad_dur=0.32,highpass=f=70,lowpass=f=15500,loudnorm=I=-16:TP=-1.5:LRA=8" \
+            -ar 44100 -ac 1 -codec:a libmp3lame -b:a 192k \
+            "talang_single/FRAGA_VAD_SKA_DU_GORA_IDAG__Dansa_charma_publiken_och_visa_juryn_riktig_talang.mp3"
+
+          test -s "talang_single/FRAGA_VAD_SKA_DU_GORA_IDAG__Dansa_charma_publiken_och_visa_juryn_riktig_talang.mp3"
+
+      - name: Upload separate MP3
+        uses: actions/upload-artifact@v4
+        with:
+          name: talang-separat-vad-ska-du-gora-idag
+          path: talang_single/FRAGA_VAD_SKA_DU_GORA_IDAG__Dansa_charma_publiken_och_visa_juryn_riktig_talang.mp3
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
