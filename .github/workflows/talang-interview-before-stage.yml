@@ -1,0 +1,62 @@
+name: Build Talang interview-before-stage MP3 files
+
+on:
+  push:
+    branches:
+      - tmp-talang-intervju-fore-scen-20260901
+    paths:
+      - "talang_interview/**"
+      - ".github/workflows/talang-interview-before-stage.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-mp3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install audio dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install edge-tts
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Generate interview MP3 files
+        run: python talang_interview/generate_interview_mp3.py
+
+      - name: Verify MP3-only package
+        run: |
+          python - <<'PY'
+          import zipfile
+          from pathlib import Path
+
+          path = Path("talang_interview/Talang_Intervju_Fore_Scenen_8_MP3.zip")
+          assert path.exists() and path.stat().st_size > 1000
+          with zipfile.ZipFile(path) as archive:
+              names = archive.namelist()
+              assert len(names) == 8, names
+              assert all(name.lower().endswith(".mp3") for name in names), names
+              assert all("/" not in name for name in names), names
+          print("Verified 8 MP3-only files")
+          PY
+
+      - name: Upload final ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: talang-intervju-fore-scenen-8-mp3
+          path: talang_interview/Talang_Intervju_Fore_Scenen_8_MP3.zip
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
